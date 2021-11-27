@@ -1,6 +1,6 @@
 import typer
 
-from ssg.siie import Site
+from ssg.site import Site
 
 
 def main(source="content", dest="dist"):
@@ -9,4 +9,3 @@ def main(source="content", dest="dist"):
     Site(**config).build()
 
     typer.run(main)
-    
